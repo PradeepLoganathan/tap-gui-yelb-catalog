@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: yelb-db
-  description: Yelb Backend DB
+  name: CustomerRating-db
+  description: Customer Rating Backend Database. This is the Customer Rating database. It is used to rate and store customer rating information
   tags:
     - sql
   annotations:
@@ -11,5 +11,5 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-a
-  system: yelb
+  owner: CustomerRating-Team
+  system: CustomerManagement
