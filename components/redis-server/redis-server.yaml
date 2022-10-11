@@ -14,4 +14,4 @@ spec:
   lifecycle: experimental
   owner: CustomerRating-Team
   system: CustomerManagement
-  dependsOn: [Component:yelb-db]
+  dependsOn: [Component:CustomerRating-db]
