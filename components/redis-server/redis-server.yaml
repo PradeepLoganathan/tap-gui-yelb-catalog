@@ -10,7 +10,7 @@ metadata:
     'backstage.io/kubernetes-label-selector': 'app=redis-server,tier=cache'
     'backstage.io/techdocs-ref': dir:.
 spec:
-  type: service
+  type: Cache
   lifecycle: experimental
   owner: CustomerRating-Team
   system: CustomerManagement
