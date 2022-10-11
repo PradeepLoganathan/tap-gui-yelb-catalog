@@ -1,20 +1,21 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: yelb-ui
-  description: Yelb UI App
+  name: CustomerRating-UI
+  description: The User Interface for the Customer rating system. This is a Angular V12 application
   tags:
     - javascript
+    - Angular
   annotations:
     'backstage.io/kubernetes-label-selector': 'app=yelb-ui,tier=frontend'
     'backstage.io/techdocs-ref': dir:.
   links:
-    - url: https://yelb-ui.example.com
-      title: 'Yelb UI Information'
+    - url: https://customerrating-ui.somebankingsystem.com
+      title: 'Customer rating system for some banking system'
       icon: locallibrary
 spec:
-  type: service
+  type: SinglePageApp
   lifecycle: experimental
-  owner: team-a
-  system: yelb
-  dependsOn: [Component:yelb-appserver]
+  owner: CustomerRating-Team
+  system: CustomerManagement
+  dependsOn: [Component:Customer-Cache]
