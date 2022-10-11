@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: Customer-Cache
-  description: Redis Server App
+  description: This is a caching component for the Customer rating system. This is a redis server cache which uses a LRU cache to store customer details as they are pulled out by the Customer rating engine.
   tags:
     - nosql
     - redis
